@@ -51,10 +51,6 @@ function mostrarPanelAdmin() {
                     <div class="text-3xl font-black mb-2">$${totalIngresos}</div>
                     <div class="text-xs uppercase tracking-wider opacity-90 font-semibold">Total de Ingresos</div>
                 </div>
-                <div class="bg-gradient-to-br from-purple-650 to-purple-800 text-white rounded-2xl shadow-md p-6">
-                    <div class="text-3xl font-black mb-2">${totalUsuarios}</div>
-                    <div class="text-xs uppercase tracking-wider opacity-90 font-semibold">Usuarios Registrados</div>
-                </div>
                 <div class="bg-gradient-to-br from-indigo-600 to-indigo-800 text-white rounded-2xl shadow-md p-6">
                     <div class="text-3xl font-black mb-2">${totalActivos}</div>
                     <div class="text-xs uppercase tracking-wider opacity-90 font-semibold">Usuarios Activos</div>
