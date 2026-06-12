@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Tienda UCAB - E-commerce Vanilla</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
     <link rel="manifest" href="manifest.json">
 </head>
 <body class="bg-white dark:bg-gray-900 transition-colors duration-300">
     <nav class="bg-white dark:bg-gray-800 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Mi Tienda UCAB</h1>
+                <div class="flex items-center gap-6">
+                    <a href="index.html?view=landing" class="text-2xl font-bold text-blue-600 dark:text-blue-400 hover:opacity-85 transition">Mi Tienda UCAB</a>
+                    <div id="nav-links" class="hidden md:flex items-center gap-4">
+                        <!-- Enlaces dinámicos se inyectarán aquí -->
+                    </div>
                 </div>
                 <div class="flex items-center gap-4">
                     <span id="status-conexion" class="text-sm font-semibold">🟢 Online</span>
-                    <button id="toggle-dark-mode" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">
+                    <button id="toggle-dark-mode" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
                         🌙
                     </button>
-                    <button id="btn-logout" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
-                        Logout
-                    </button>
+                    <div id="nav-auth-buttons" class="flex items-center gap-2">
+                        <!-- Botones de auth dinámicos -->
+                    </div>
                 </div>
+            </div>
+            <!-- Menú móvil -->
+            <div id="nav-links-mobile" class="md:hidden flex flex-wrap gap-2 pb-3 justify-start hidden">
+                <!-- Enlaces dinámicos para móvil se inyectarán aquí -->
             </div>
         </div>
     </nav>
